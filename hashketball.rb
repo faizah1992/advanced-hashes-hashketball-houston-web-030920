@@ -211,7 +211,21 @@ end
   end
   biggestshoeplayer[:rebounds]
 end
-      
+
+def most_points_scored 
+  homeplayers= game_hash[:home][:players]
+  awayplayers= game_hash[:away][:players]
+  allplayers= homeplayers.concat(awayplayers)
+  i=0 
+  playerwithmostpoints=allplayers[0]
+  while i< allplayers.count do 
+    if allplayers[i][:points]>playerwithmostpoints[:points]
+      playerwithmostpoints=allplayers[i]
+    end 
+    i += 1
+    playerwithmostpoints[:player_name]
+  end 
+    
 
   
 
