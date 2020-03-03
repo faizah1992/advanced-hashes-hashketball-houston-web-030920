@@ -223,8 +223,9 @@ def most_points_scored
       playerwithmostpoints=allplayers[i]
     end 
     i += 1
-    playerwithmostpoints[:player_name]
   end 
+  playerwithmostpoints[:player_name]
+end 
     
 
   
