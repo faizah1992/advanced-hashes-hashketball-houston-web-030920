@@ -282,7 +282,12 @@ def long_name_steal_a_ton
     end 
     i += 1
   end 
-  if name == higheststeals[:]
+  if name == higheststeals[:player_name]
+    return true 
+  end 
+  retun false 
+  
+end
     
     
   
