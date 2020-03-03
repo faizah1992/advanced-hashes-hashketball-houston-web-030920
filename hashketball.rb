@@ -269,7 +269,9 @@ def winning_team
   
 end
   
-def long_name_steal_a_ton 
+def long_name_steal_a_ton?
+  
+  
   name = player_with_longest_name
   homeplayers = game_hash[:home][:players]
   awayplayers = game_hash[:away][:players]
