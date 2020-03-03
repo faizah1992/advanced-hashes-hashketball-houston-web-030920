@@ -228,7 +228,20 @@ def most_points_scored
 end 
 
 def player_with_longest_name 
-
+    homeplayers= game_hash[:home][:players]
+    awayplayers= game_hash[:away][:players]
+    allplayers= homeplayers.concat(awayplayers)
+    i=0 
+    playerwithlongestname=allplayers[0]
+    while i<allplayers.count do
+      if allplayers[i][:player_name].length >allplayers[:player_name].length
+    end
+    i += 1
+  end 
+  playerwithlongestname[:player_name]
+end 
+     
+    
   
 
 
