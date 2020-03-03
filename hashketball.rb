@@ -226,7 +226,8 @@ def most_points_scored
   end 
   playerwithmostpoints[:player_name]
 end 
-    
+
+def player_with_longest_name 
 
   
 
