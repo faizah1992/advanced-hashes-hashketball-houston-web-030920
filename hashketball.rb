@@ -234,7 +234,7 @@ def player_with_longest_name
     i=0 
     playerwithlongestname=allplayers[0]
     while i<allplayers.count do
-      if allplayers[i][:player_name].length >allplayers[:player_name].length
+      if allplayers[i][:player_name].length >allplayers[:player_name]
     end
     i += 1
   end 
