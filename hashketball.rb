@@ -269,6 +269,22 @@ def winning_team
   
 end
   
+def long_name_steal_a_ton 
+  name = player_with_longest_name
+  homeplayers = game_hash[:home][:players]
+  awayplayers = game_hash[:away][:players]
+  allplayers = homeplayers.concat(awayplayers)
+  i=0 
+  higheststeals= allplayers[0]
+  while i < allplayers.count do 
+    if  allplayers[i][:steals]>higheststeals[:steals]
+      higheststeals=allplayers[i]
+    end 
+    i += 1
+  end 
+  if name == higheststeals[:]
+    
+    
   
   
   
