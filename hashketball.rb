@@ -243,6 +243,33 @@ def player_with_longest_name
 end 
      
 def winning_team 
+  hometeam = game_hash[:home]
+  awayteam = game_hash[:away]
+  hometotal= 0 
+  awaytotal=0
+  homeplayers = game_hash[:home][:players]
+  i=0 
+  while i<homeplayers.count do 
+    points=homeplayers[i][:points]
+    hometotal += points 
+    i += 1
+  end 
+  awayplayers = game_hash[:away][:players]
+  i=0 
+  while i< awayplayers.count do 
+    points = awayplayers[i][:points]
+    awaytotal += 1 
+    i += 1 
+  end 
+  if awaytotal > hometotal
+    return awayteam[:team_name]
+  else 
+    return hometeam[:team_name]
+  end 
+  
+end
+  
+  
   
   
 
